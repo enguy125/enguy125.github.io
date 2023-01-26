@@ -24,7 +24,7 @@ h1 {
 	background-color: rgb(148, 150, 166);
 	color: rgb(250, 250, 250); /* Same as body background. */
 	font-size: 3em;
-	padding: 1rem 0.5rem 0.5em; /* You want three values. */
+	padding: 2em 1rem 0.5em; /* You want three values. */
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -41,20 +41,20 @@ h2 {
 	background-color: rgb(148, 150, 166);
 	color: rgb(250, 250, 250);
 	font-size: 2em;
-	padding: 0.5rem;
+	padding: 1rem;
 	font-family: serif;
 	font-weight: bold;
 }
 
 h3 {
-	margin: 1rem 0.5rem 1rem; /*Three values again. You got the idea.*/
-	padding-top: 0.5rem;
+	margin: 2rem 0.5rem 1rem; /*Three values again. You got the idea.*/
+	padding-top: 2em;
 	font-size: 2em;
 	color: rgb(255, 0, 0);
 	font-weight: bold;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
-	border-top: 0.5em solid rgb(255, 0, 0);
+	border-top: 0.1em solid rgb(255, 0, 0);
 }
 
 h4 {
@@ -75,5 +75,5 @@ ul {
 
 li { 
 	margin: 1rem 0.5rem;
-	list-style-type: ____;
+	list-style-type: none;
 }
