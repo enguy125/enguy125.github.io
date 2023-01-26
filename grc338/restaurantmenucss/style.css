@@ -30,7 +30,7 @@ h1 {
 }
 
 /* You’ll need to add a span element to your HTML. */
-.h1span { 	
+h1 span { 	
 	font-family: serif;
 	font-style: italic;
 	font-weight: normal;
