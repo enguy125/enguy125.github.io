@@ -1,0 +1,101 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+img {
+    width: 100%; /*Please leave this line.*/
+    display: block;
+    grid-column: 1/4;
+}
+
+body {
+    background-color: rgb(220, 220, 220); /* Not totally white. */
+}
+
+div.container {
+    max-width: 75em;
+    margin: 0 auto;
+    background-color: rgb(250, 250, 250);
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 4fr);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin: 1rem;  
+}
+
+
+header {
+    background-color: rgb(255, 139, 38);
+    padding: 1.5rem;
+    grid-column: 1/5;
+}
+
+h1 {
+    font-family: Sutro, serif;  
+    font-weight: 700;  
+    font-style: normal;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    margin: 0.5rem;
+}
+
+h2 {
+    font-family: Sutro, serif;  
+    font-weight: 300;  
+    font-style: normal;
+    font-size: 1.5em;
+    color: rgb(250, 222, 191);
+    margin: 0.5rem;
+}
+
+figcaption {
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: italic;
+    margin: 1.5rem 3rem;
+    grid-column: 4/5;
+}
+
+h3 {
+    font-family: Sutro, serif;  
+    font-weight: 300;  
+    font-style: normal;
+    font-size: 1.3em;
+    color: rgb(255, 139, 38);
+    text-transform: uppercase;
+    margin: 2rem 1.5rem 0em;
+    padding-top: 1rem;
+    border-top: solid rgb(255, 139, 38);
+
+}
+
+ul, ol {
+    padding: 0.5rem 1rem;
+}
+
+li {
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: normal;
+    margin: 1rem 1.5rem 1rem 0.5rem;
+}
+
+footer {
+    background-color: rgb(255, 139, 38);
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: normal;
+    color: rgb(250, 222, 191);
+    margin: 1.5rem 0rem 0rem;
+    padding: 1rem;
+    grid-column: 1/5;
+}
+
