@@ -153,6 +153,12 @@ footer p {
 		margin: auto auto;
 	}
 	
+	nav ul li {
+		display: inline-block;
+		margin: 1.5em 0.5em;
+		font-size: 1.5em;
+	}
+	
 	div.container { 
 		min-height: 100vh; 
 		background-color: rgb(255, 255, 255);
