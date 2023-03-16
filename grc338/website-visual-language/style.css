@@ -10,7 +10,7 @@ div.home-container {
 	background: url("home-background.jpg") center center fixed;
 	background-size: cover;
 	position: relative;
-	min-height: 100vh; 
+	min-height: 110vh; 
 }
 
 div.container { 
@@ -178,7 +178,7 @@ footer p {
 		font-size: 1.5em;
 	}
 	
-	main {
+	div.container {
 		max-width: 80%;
 		margin: auto auto;
 	}
