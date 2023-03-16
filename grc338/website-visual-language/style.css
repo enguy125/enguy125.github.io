@@ -10,7 +10,7 @@ div.home-container {
 	background: url("home-background.jpg") center center fixed;
 	background-size: cover;
 	position: relative;
-	min-height: 110vh; 
+	min-height: 100vh; 
 }
 
 div.container { 
@@ -170,22 +170,23 @@ footer p {
 @media screen and (min-width: 60em) {
 	
 	nav ul {
-	margin-right: 2em;	
+		margin-right: 2em;	
 	}
+	
 	nav ul li {
 		display: inline-block;
 		margin: 1em 0.5em;
 		font-size: 1.5em;
 	}
 	
-	div.container {
+	main {
 		max-width: 80%;
 		margin: auto auto;
 	}
 
 	figure {
-	max-height: 40em;
-}
+		max-height: 40em;
+	}
 
 	main.menu ul {
 		display: grid;
