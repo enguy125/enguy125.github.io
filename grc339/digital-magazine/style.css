@@ -1,0 +1,108 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+header {
+    margin: 0 0 1rem 0.5rem;
+}
+
+nav ul li a {
+    color: rgb(92, 118, 150);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+section {
+    padding-bottom: 2rem;
+}
+
+h1 {
+    width: 6rem;
+    padding: 1rem 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-weight: bold;  
+    color: rgb(92, 118, 150);  
+    margin: 0.5rem 0 0 0.5rem;
+}
+
+.story-1 h2 {
+    font-size: 3em;
+}
+
+.story-2 h2 {
+    font-size: 2em;
+}
+
+.story-3 h2 {
+    font-size: 1em;
+    margin-left: 0;
+}
+
+.story-3 p {
+    margin-left: 0;
+}
+
+section.story-3 {
+    border-top: solid 0.1em rgb(92, 118, 150);
+    margin: 0 0.5rem;
+}
+
+p {
+    font-family: sans-serif;
+    margin-left: 0.5rem;
+}
+
+article {
+    margin-bottom: 1em;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+article.story-1 h2 {
+    margin-top: 2rem;
+}
+
+
+figcaption {
+    font-family: sans-serif;
+    font-style: italic;
+    margin: 0.5rem 0.5rem 1rem;
+    color: #555555;
+}
+
+aside {
+    background-color: rgb(204, 207, 251);
+    padding: 1em 0.5em;
+}
+
+aside.story-3 h2 {
+    margin-left: 0.5rem;
+}
+
+aside.story-3 p {
+    margin-left: 0.5rem;
+}
+
+footer {
+    background-color: rgb(92, 118, 150);
+    padding: 1em 0;
+}
+
+footer p {
+    font-family: sans-serif;
+    color: #FFF;
+}
