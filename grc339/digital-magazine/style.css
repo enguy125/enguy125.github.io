@@ -18,12 +18,17 @@ img {
     border-radius: 0.5em;
 }
 
+.home-container figure:hover {
+    filter: contrast(110%) drop-shadow(0.1em 0.1em 0.5em rgb(255, 184, 200));
+}
+
 header {
     padding:0 0 1em 1em;
     position: inherit;
     background-image: linear-gradient(rgba(248, 242, 228, 0.7), rgba(253,251,246,1));
     border-bottom: solid 0.1em rgb(109, 138, 150,0.2);
     backdrop-filter: blur(0.5em);
+    z-index: 1;
 }
 
 nav ul li a {
@@ -75,7 +80,9 @@ p {
     font-family: articulat-cf, sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 0.5em 0.5em 0.5em; 
+    margin: 0.5em 0.5em 0.5em;
+    font-size: 1.05em; 
+    line-height: 1.4em;
 }
 
 a {
@@ -93,9 +100,11 @@ figcaption {
 
 aside section.story-2 {
     padding: 1em 0.5em;
-    border-radius: 0.5em;
     background-color: rgb(255, 184, 200, 0.5);
     margin-bottom: 1em;
+    border: 0.1em solid #E8E8E8;
+    border-radius: 0.5rem;
+    box-shadow: 0.5em 0.5em 1em #E8E8E8;
 
 }
 
@@ -112,6 +121,153 @@ footer p {
     font-family: kepler-std, serif;
     font-weight: 400;
     font-style: italic;
+}
+
+/*photo gallery page*/
+
+.gallery-container {
+    max-width: 40em;
+    margin: auto;
+}
+
+main.gallery {
+    position: relative;
+    padding-bottom: calc(100% + 5em);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    }
+
+.gallery figure{
+    margin: 0;
+    width: calc(100% - 2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    object-fit: cover;
+    filter: contrast(120%);
+}
+
+.carousel label {
+    filter: saturate(40%);
+}
+
+.carousel label:hover {
+    filter: saturate(110%) contrast(120%) drop-shadow(0.1em 0.1em 0.8em rgb(255, 184, 200));
+}
+
+#xtonz {
+    font-size: 2em;
+    margin: 0.5em 0 0.5em 0.5em;
+}
+
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+nav.carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    align-content: space-around;
+    background-color: rgb(255, 184, 200, 0.2);
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 0.5em;
+}
+
+input {
+    display: none;
+}
+
+/*NEWSLETTER*/
+
+.cta-contain {
+    margin: 3rem 1rem;
+    border: 0.1em solid #E8E8E8;
+    border-radius: 0.5rem;
+    box-shadow: 0.5em 0.5em 1em #E8E8E8;
+}
+
+.cta-l {
+    padding: 1.2em;
+    margin: 0;
+    color: #FFF;
+    background-color: rgb(109, 138, 150);
+    display: inline-block;
+    align-content: center;
+}
+
+.cta-l h2 {
+    font-family: kepler-std-semicondensed, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #FFF;
+}
+
+.cta-r {
+    padding: 1em;
+    background-color: #f8f8f8;
+}
+
+
+input[type=text], input[type=submit] {
+    width: 90%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 0.1em solid #ccc;
+    box-sizing: border-box;
+}
+
+.info h3, .prefs h3 {
+    font-family: kepler-std-semicondensed, serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1em;
+    font-size: 1.5em;
+    color: rgb(109, 138, 150);
+    margin: 0.5rem 0 0 0.5rem;
+}
+
+input[type=checkbox] {
+    display: initial;
+}
+
+.prefs ul li label {
+    font-family: articulat-cf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.05em; 
+    line-height: 1.5em;
+}
+
+
+/* submit button */
+
+input[type=submit] {
+    text-transform: uppercase;
+    background-color: rgb(255, 184, 200, 0.7);
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(255, 184, 200);
+}
+
+.submit {
+    padding: 0.5em 0;
 }
 
 
@@ -224,6 +380,50 @@ footer p {
 
     section.story-2 a p {
         flex: 0 0 3em;
+    }
+
+    /*photo gallery page*/
+
+    .gallery-container {
+        max-width: 80em;
+        display: grid;
+        grid-template-columns: 1.2fr 2fr;
+    }
+    main.gallery {
+        grid-column: 1/2;
+        margin-right: 3em;
+        padding-bottom: calc(100% + 1em);
+    }
+
+    nav.carousel {
+        padding: 1em;
+        margin: 0;
+    }
+
+    /*NEWSLETTER*/
+
+    .cta-contain {
+        margin: 3rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-bottom: 15%;
+    }
+
+    .cta-l {
+        padding: 1.2em;
+        margin: 0;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        display: inline-block;
+        align-content: center;
+    }
+
+
+    .cta-r {
+        padding: 1em;
+        margin-left: 1em;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
     }
 
 }

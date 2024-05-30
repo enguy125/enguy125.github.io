@@ -1,0 +1,72 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <!-- You can start by deleting this line. Then, you can delete the other comments as you read them. -->
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- You need this to proper scale in actual mobile devices.-->
+            <link rel="stylesheet" type="text/css" href="style.css"> 
+            <link rel="stylesheet" href="https://use.typekit.net/bnd5aff.css">
+            <title>7th Street Magazine</title>
+
+            <!-- Helpful meta tags to fight GitHub aggresive caching-->
+                <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+                <meta http-equiv="Pragma" content="no-cache" />
+                <meta http-equiv="Expires" content="0" />
+            
+        </head>	
+
+        <body>
+            <header>
+                <h1><a href="index.html"><img src="logo.svg" alt="cool logo"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">SS24 Drops</a></li> 
+                        <li><a href="#">Brands</a></li>
+                        <li><a href="#">Designers</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                    </ul> 
+                </nav>
+            </header>
+            <form action="action_page.php">
+                <section class="cta-contain">
+                    <div class="cta-l">
+                        <h2>Keep up with 7th Street!</h2>
+                        <p>Sign up for our newsletter to get notified of exclusive drops and the latest news on Asian Streetwear trends right to your mailbox.</p>
+                    </div>
+                    <div class="cta-r">
+                        <section class="info">
+                            <h3>Personal Information</h3>
+                            <input type="text" placeholder="First and Last Name" name="mail" required>
+                            <input type="text" placeholder="Email address" name="mail" required>
+                        </section>
+                        <section class="prefs">
+                            <h3>What notifications would you like to receive?</h3>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="new-articles" value="new-articles">
+                                    <label for="new-articles">New Articles</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="handbag-releases" value="handbag-releases">
+                                    <label for="handbag-releases">Handbag Releases</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="trends" value="trends">
+                                    <label for="trends">Trends</label>
+                                </li>
+                            </ul>
+                            </section>
+                            <section class="submit">
+                                <input type="submit" value="Subscribe">
+                            </section>
+                    </div>
+                </section>
+            </form>
+            <footer>
+                <p>All rights reserved.</p>
+            </footer>
+        </body>
+    </html>
+
+
