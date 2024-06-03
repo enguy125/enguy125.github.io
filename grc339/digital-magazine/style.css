@@ -23,7 +23,7 @@ img {
 }
 
 header {
-    padding:0 0 1em 1em;
+    padding:1em 0 1em 1em;
     position: inherit;
     background-image: linear-gradient(rgba(248, 242, 228, 0.7), rgba(253,251,246,1));
     border-bottom: solid 0.1em rgb(109, 138, 150,0.2);
@@ -41,11 +41,8 @@ nav ul li a {
 }
 
 h1 {
-    font-family: kepler-std-semicondensed, serif;
-    font-weight: 700;
-    font-style: normal;
     width: 6rem;
-    padding: 1rem 0;
+    padding-bottom: 1em;
 }
 
 ul {
@@ -102,9 +99,9 @@ aside section.story-2 {
     padding: 1em 0.5em;
     background-color: rgb(255, 184, 200, 0.5);
     margin-bottom: 1em;
-    border: 0.1em solid #E8E8E8;
+    border: 0.1em solid #FFF;
     border-radius: 0.5rem;
-    box-shadow: 0.5em 0.5em 1em #E8E8E8;
+    box-shadow: 0.5em 0.5em 1em #FFF;
 
 }
 
@@ -200,6 +197,7 @@ input {
 .cta-l {
     padding: 1.2em;
     margin: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
     color: #FFF;
     background-color: rgb(109, 138, 150);
     display: inline-block;
@@ -217,6 +215,7 @@ input {
 .cta-r {
     padding: 1em;
     background-color: #f8f8f8;
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 
 
@@ -257,7 +256,7 @@ input[type=checkbox] {
 input[type=submit] {
     text-transform: uppercase;
     background-color: rgb(255, 184, 200, 0.7);
-    color: white;
+    color: #FFF;
     border: none;
     border-radius: 0.5em;
 }
@@ -295,7 +294,7 @@ input[type=submit]:hover {
     }   
 
     header {
-        padding:0 0 1em 5em;
+        padding: 2em 0 1em 5em;
         position: sticky; top: 0;
     }
 
@@ -406,14 +405,13 @@ input[type=submit]:hover {
         margin: 3rem 4rem;
         display: grid;
         grid-template-columns: 1fr 2fr;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
 
     .cta-l {
-        padding: 1.2em;
+        padding: 1em 1em 1em 1.2em;
         margin: 0;
-        border-top-left-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem;
+        border-radius: 0.5rem 0 0 0.5rem;
         display: inline-block;
         align-content: center;
     }
@@ -421,9 +419,57 @@ input[type=submit]:hover {
 
     .cta-r {
         padding: 1em;
-        margin-left: 1em;
-        border-top-right-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #222;
+    }
+
+    h1 {
+        background-image: url("logo-dark.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    h1 img {
+        opacity: 0;
+    }
+
+    h2, .story-1 h2, nav ul li a, figcaption {
+        color: #A7B9C0;
+    }
+
+    p, aside .story-2 h2, footer p {
+        color: #FFF;
+    }
+
+    header {
+        background-image: linear-gradient(rgba(40, 40, 40, 0.7), rgba(0,0,0,1));
+    }
+
+    footer {
+        background-color: rgb(93, 112, 127);
+    }
+
+    aside section.story-2 {
+        background-color: rgb(93, 112, 127);  
+        margin-bottom: 1em;
+        border: 0.05em solid #E8E8E8;
+        box-shadow: 0.1em 0.1em 0.5em #E8E8E8;
+    }
+
+    nav.carousel {
+    background-color: rgb(93, 112, 127, 0.5);
+    }
+
+    .cta-contain {
+        border: 0.05em solid #E8E8E8;
+        box-shadow: 0.1em 0.1em 0.5em #E8E8E8;  
     }
 
 }
